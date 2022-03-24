@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | Imaze'22</title>
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <video
+      src="./background-abt/Pexels Videos 2611250.mp4"
+      autoplay
+      loop
+      muted
+      playsinline
+      class="bg"
+    ></video>
+    <div class="main">
+      <div class="nav-container">
+        <nav>
+          <a href="./index.html">
+            <img
+              src="./image-abt/No bgImaze final white.png"
+              alt=""
+              id="logo"
+            />
+          </a>
+          <div class="nav-links" id="navLinks">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+              onclick="hideMenu()"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+            <ul>
+              <li><a href="./index.html" onclick="hideMenu()">Home</a></li>
+              <li><a href="./page.html" onclick="hideMenu()">Events</a></li>
+              <li><a href="./test4.html" onclick="hideMenu()">Team</a></li>
+              <li><a href="./about.html" onclick="hideMenu()">About Us</a></li>
+              <li><a href="#" onclick="hideMenu()">Download Apk</a></li>
+            </ul>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 fa-bars"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+            onclick="showMenu()"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+          <!-- <img src="./open.jpeg" alt="" class="fa fa-bars" onclick="showMenu()" /> -->
+        </nav>
+      </div>
+      <h2>About Us</h2>
+      <div class="container">
+        <div class="box">
+          <div class="content">
+            <img src="./image-abt/cvmunic (1).png" alt="" class="cvm-logo" />
+            <hr id="line" />
+            <h3>CVM University</h3>
+            <p>
+              “कर्मण्येवाधिकारस्ते मा फलेषु कदाचन। मा कर्मफलहेतुर्भूर्मा ते
+              सङ्गोऽस्त्वकर्मणि॥“<br /><br />
+              You have a right to perform your prescribed duty, but you are not
+              entitled to the fruits of action. Don’t let the fruit drive your
+              desire to perform a task, so you will never be attached to not
+              doing your duty. This verse from the Bhagvad Gita inspired the
+              respected founders, Shri Bhaikaka and Shri Bhikhabhai saheb, to
+              work selflessly for rural resurgence of the post-independence
+              India through upliftment and enrichment of education. This brought
+              the Charutar Vidya Mandal (CVM) into existence as a charitable
+              trust in 1945, with the belief that quality education is the
+              primary tool to social transformation and development of the
+              nation.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <img src="./image-abt/GCET_logo-1.png" alt="" />
+            <hr />
+            <h3>GCET</h3>
+            <p>
+              G H Patel college of Engineering and technology, popularly known
+              as GCET, is the first self-financed institution of Gujarat,
+              founded in 1996 and has evidently established itself to be one of
+              the sought-after institutes in the state of Gujarat. GCET, since
+              its inception, has brought forth loads of insightful beings,
+              through its value-based education, into the society and has
+              significantly contributed to the industrial growth. The private
+              engineering college was set up as per the norms of the All India
+              Council of Technical Education (AICTE) and the policy of State
+              Government.
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="content">
+            <img src="./image-abt/Imaze final 2.png" alt="" />
+            <hr />
+            <h3>IMAZE 2022</h3>
+            <p>
+              G H Patel College of Engineering and Technology, popularly known
+              as GCET is back with their yearly observance of the fascinating
+              technical fest, to keep aside the weariness of our customary
+              routine and step into the realm of a reasonable cognizance,
+              endorsing the sagacity galore. A modest step taken towards the
+              inception 20 years ago, IMAZE has been manifested as a heritable
+              affair of the institution, witnessing massive indulgence of all
+              the faculty members and students.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.5086067679676!2d72.91754191399711!3d22.560073239117955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e4e1285d628d5%3A0xe6cee346bfaa35d0!2sG%20H%20Patel%20College%20of%20Engineering%20%26%20Technology!5e0!3m2!1sen!2sin!4v1648027296453!5m2!1sen!2sin"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        class="map"
+      ></iframe>
+      <img src="./image-abt/PlayStore.png" alt="" />
+    </div>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      const bars = document.querySelector(".fa-bars");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+        bars.classList.add("hidden");
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-250px";
+        bars.classList.remove("hidden");
+      }
+    </script>
+  </body>
+</html>

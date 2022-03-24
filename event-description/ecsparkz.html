@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="desc.css" />
+  <title>Description</title>
+</head>
+<body>
+  <body>
+    <video muted loop autoplay class="clip" playsinline>
+      <source
+        src="../background-desc/Pexels Videos 2611250.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <div class="nav-container">
+      <nav>
+        <a href="../index.html">
+          <img
+            src="../images-desc/No bgImaze final white.png"
+            alt=""
+            id="logo"
+          />
+        </a>
+        <div class="nav-links" id="navLinks">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+            onclick="hideMenu()"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+          <ul>
+            <li><a href="../index.html" onclick="hideMenu()">Home</a></li>
+            <li><a href="../page.html" onclick="hideMenu()">Events</a></li>
+            <li><a href="../test4.html" onclick="hideMenu()">Team</a></li>
+            <li><a href="../about.html" onclick="hideMenu()">About Us</a></li>
+            <li><a href="#" onclick="hideMenu()">Download Apk</a></li>
+          </ul>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 fa-bars"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+          onclick="showMenu()"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+        <!-- <img src="./open.jpeg" alt="" class="fa fa-bars" onclick="showMenu()" /> -->
+      </nav>
+    </div>
+
+    <div class="box">
+
+      <img src="./pics/electrosparkz.png">
+      <h3>ELECTROSPARKZ</h3>
+
+      <p>“LET THE LIGHT SIGN IN USING ELECTRICITY”. <br><br> It’s time to pave your way through the phobia of your weakness to meet the next level of showcasing your idea on circuit solving, deep understanding of electrical components, circuit designing. </p>
+
+    </div>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      const bars = document.querySelector(".fa-bars");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+        bars.classList.add("hidden");
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-250px";
+        bars.classList.remove("hidden");
+      }
+    </script>
+</body>
+</html>
